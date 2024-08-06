@@ -40,11 +40,7 @@
     .maincontact{
         flex-direction: column;
     }
-}
-@media (max-width:340px){
- .secondcontact h2{
+    .secondcontact h2{
     font-size: 14px;
  }
-    
-  
 }
