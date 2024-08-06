@@ -1,0 +1,104 @@
+
+.mainnav{
+    width: 30%;
+    background-color: rgba(145, 10, 10, 0.7);
+        position: absolute;
+        top: 2px;
+        left: 0px;
+       min-height: 100vh;
+       z-index: 200;
+       transform: translateX(-110%);
+       transition: all 0.3s ;
+}
+.mainnav.toggle{
+    transform: translateX(0%);
+}
+.hamburger,.cross{
+    font-size: 36px;
+    margin-left: 5px;
+    color: white;
+}
+.hamburger{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    z-index: 200;
+}
+#check{
+    display: none;
+}
+.cross{
+    text-align: right;
+    padding-right: 6px;
+}
+.cross span:hover{
+    color: rgb(226, 41, 41);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    margin-bottom: 17px;
+    color: white;
+    font-weight: bolder;
+}
+.logo img{
+    width: 43px;
+    height: 43px;
+    vertical-align: middle;
+    border: 1px solid white;
+    border-radius: 23px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: white;
+    margin-bottom: 24px;
+}
+.item:hover{
+     transform: scale(1.05);
+    background-color: #555; /* Background color on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+.item a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.socialicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+    color: white; 
+    margin-top: 13rem;
+    /* position: absolute;
+    right: 28%;
+    bottom: 16px; */
+}
+.socialicon span{
+    margin-right: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
+.socialicon a{
+    color: white;
+}
+.socialicon span:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+@media (max-width:1250px){
+    .mainnav{
+        width: 50%;
+    }
+}
+@media (max-width:480px){
+    .mainnav{
+        width: 100%;
+    }
+}
