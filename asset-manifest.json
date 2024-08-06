@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Asad-Khan/static/css/main.f42af0e1.css",
+    "main.js": "/Asad-Khan/static/js/main.940f5a58.js",
+    "static/js/453.ac36254e.chunk.js": "/Asad-Khan/static/js/453.ac36254e.chunk.js",
+    "index.html": "/Asad-Khan/index.html",
+    "main.f42af0e1.css.map": "/Asad-Khan/static/css/main.f42af0e1.css.map",
+    "main.940f5a58.js.map": "/Asad-Khan/static/js/main.940f5a58.js.map",
+    "453.ac36254e.chunk.js.map": "/Asad-Khan/static/js/453.ac36254e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f42af0e1.css",
+    "static/js/main.940f5a58.js"
+  ]
+}
