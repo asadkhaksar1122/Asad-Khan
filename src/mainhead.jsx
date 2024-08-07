@@ -1,4 +1,5 @@
 import "./mainhead.css";
+
 function Main(props) {
   return (
     <section className="mainfirstsect">
