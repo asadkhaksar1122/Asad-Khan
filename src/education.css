@@ -39,6 +39,7 @@ font-family: "Lato", sans-serif;
   background-color: aliceblue;
   padding: 5px 10px;
   border-radius: 5px;
+  text-decoration: none;
   transition: all 0.2s linear;
 }
 .onescript a:hover{
