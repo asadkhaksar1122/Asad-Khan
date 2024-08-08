@@ -8,12 +8,30 @@
 .content{
     color: black;
 }
-.content h1{
-    font-size: 45px;
-    line-height: 6px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
+ @keyframes changecolor {
+            from {
+               background: linear-gradient(90deg, rgba(180,58,167,0.8715861344537815) 0%, rgba(41,253,29,0.8295693277310925) 50%, rgba(252,238,69,0.8099614845938375) 100%);
+            -webkit-background-clip: text; /* For Safari */
+            background-clip: text; 
+            }
+            to {
+              
+background: linear-gradient(90deg, rgba(252,238,69,1) 0%, rgba(41,253,29,0.8295693277310925) 50%, rgba(180,58,167,1) 100%);
+ -webkit-background-clip: text; /* For Safari */
+            background-clip: text; 
+            }
+        }
+   .content h1 {
+            font-size: 45px;
+            line-height: 1; /* Changed to 1 for better spacing */
+            margin-bottom: 0;
+            margin-top: 0;
+            background: linear-gradient(90deg, rgba(180,58,167,0.8715861344537815) 0%, rgba(41,253,29,0.8295693277310925) 50%, rgba(252,238,69,0.8099614845938375) 100%);
+            -webkit-background-clip: text; /* For Safari */
+            background-clip: text; /* For other browsers */
+            color: transparent; /* Hide the original text color */
+            animation: changecolor 2s infinite linear; /* Add linear for smooth animation */
+        }
 .content a{
     border: 1px solid white;
     padding: 5px 16px;
