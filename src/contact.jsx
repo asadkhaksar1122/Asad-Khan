@@ -19,7 +19,7 @@ function Onecontact(props) {
         <h2>
           <a href={props.link} target="_blank">
             {" "}
-            <FontAwesomeIcon icon={props.icon} />
+            <FontAwesomeIcon icon={props.icon} beatFade />
           </a>
         </h2>
         <p style={{ lineHeight: "3px" }}>Click on button to contact me</p>
@@ -34,7 +34,7 @@ export default function Contact() {
         <a name="contact">
           {" "}
           <h1 style={{ color: "black !important" }}>
-            <FontAwesomeIcon style={{ color: "black" }} icon={faAddressBook} />
+            <FontAwesomeIcon style={{ color: "black" }} fade icon={faAddressBook} />
             &nbsp;Contact
           </h1>
         </a>

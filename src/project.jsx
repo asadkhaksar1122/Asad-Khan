@@ -14,7 +14,7 @@ function Oneproject(props) {
       <div className="projectlink">
         <h2>
           <a href={props.link} target="_blank">
-            <FontAwesomeIcon icon={faGithub} /> &nbsp;Github Link
+            <FontAwesomeIcon icon={faGithub} beatFade /> &nbsp;Github Link
           </a>
         </h2>
       </div>
@@ -52,7 +52,7 @@ export default function Project() {
       <a name="projects">
         <h1>
           {" "}
-          <FontAwesomeIcon icon={faGithub} /> &nbsp; Projects
+          <FontAwesomeIcon icon={faGithub} fade /> &nbsp; Projects
         </h1>
       </a>
       {projects.map((project) => (

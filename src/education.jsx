@@ -46,7 +46,7 @@ function Language(props) {
       <h3 className="heading">
         {" "}
         <span className="icon">
-          <FontAwesomeIcon icon={props.icon} /> &nbsp;
+          <FontAwesomeIcon icon={props.icon} beatFade /> &nbsp;
         </span>
         <span className="languagename">{props.name}</span>
       </h3>
@@ -60,7 +60,7 @@ export default function Education() {
         {" "}
         <h1>
           {" "}
-          <FontAwesomeIcon icon={faGraduationCap} />
+          <FontAwesomeIcon icon={faGraduationCap} fade />
           &nbsp;Education
         </h1>
       </a>

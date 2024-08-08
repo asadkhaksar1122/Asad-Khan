@@ -45,7 +45,7 @@ function Navbar(props) {
       </div>
       <label htmlFor="check">
         <div className="hamburger" id="hamburger">
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} flip />
         </div>
       </label>
       <div className={`mainnav ${toggle}`}>
@@ -53,7 +53,7 @@ function Navbar(props) {
           <div className="cross">
             <span>
               {" "}
-              <FontAwesomeIcon icon={faXmark} />
+              <FontAwesomeIcon icon={faXmark} shake />
             </span>
           </div>
         </label>
@@ -65,45 +65,46 @@ function Navbar(props) {
           <div className="firstitem  item">
             <a href="#profile" onClick={switchoff}>
               {" "}
-              <FontAwesomeIcon icon={faUser} /> &nbsp; Profile
+              <FontAwesomeIcon icon={faUser} beatFade /> &nbsp; Profile
             </a>
           </div>
           <div className="firstitem item">
             <a href="#education" onClick={switchoff}>
-              <FontAwesomeIcon icon={faGraduationCap} /> &nbsp; Education
+              <FontAwesomeIcon icon={faGraduationCap} beatFade /> &nbsp;
+              Education
             </a>
           </div>
           <div className="firstitem item">
             <a href="#contact" onClick={switchoff}>
-              <FontAwesomeIcon icon={faAddressBook} /> &nbsp; Contact
+              <FontAwesomeIcon icon={faAddressBook} beatFade /> &nbsp; Contact
             </a>
           </div>
           <div className="firstitem item">
             <a href="#projects" onClick={switchoff}>
-              <FontAwesomeIcon icon={faGithub} /> &nbsp; Github Project
+              <FontAwesomeIcon icon={faGithub} beatFade /> &nbsp; Github Project
             </a>
           </div>
         </div>
         <div className="socialicon">
           <span>
             <a href="https://wa.me/923114948262" target="_blank">
-              <FontAwesomeIcon icon={faWhatsapp} />
+              <FontAwesomeIcon icon={faWhatsapp} beat />
             </a>
           </span>
           <span>
             <a href="mailto:asadkhaksar1122@gmail.com" target="_blank">
               {" "}
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} beat />
             </a>
           </span>
           <span>
             <a href="https://github.com/asadkhaksar1122" target="_blank">
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} beat />
             </a>
           </span>
           <span>
             <a href="faLinkedin" target="_blank">
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={faLinkedin} beat />
             </a>
           </span>
         </div>
