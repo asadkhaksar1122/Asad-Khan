@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url("https://www.shutterstock.com/shutterstock/photos/1534639589/display_1500/stock-photo-dark-street-wet-asphalt-reflections-of-rays-in-the-water-abstract-dark-blue-background-smoke-1534639589.jpg"); */
-  background-image: url("https://e0.pxfuel.com/wallpapers/789/355/desktop-wallpaper-abstraction-shapes-dark-background-1080x2460.jpg");
+  background-image: url("../public/background.jpg");
+ 
   background-size: cover;
   background-repeat: no-repeat;
 }
