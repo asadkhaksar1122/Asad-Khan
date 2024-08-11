@@ -38,6 +38,16 @@ function Navbar(props) {
     check.checked = false;
     checkfunc(check);
   }
+  document.addEventListener("scroll", function (e) {
+   let hamburger = document.querySelector(".hamburger");
+  if (window.scrollY >= 500) {
+   
+    hamburger.style.color="black"
+  }
+  else {
+    hamburger.style.color="white"
+  }
+});
   return (
     <nav>
       <div className="checkbox">
@@ -87,23 +97,35 @@ function Navbar(props) {
         </div>
         <div className="socialicon">
           <span>
-            <a href="https://wa.me/923114948262" target="_blank">
+            <a
+              href="https://wa.me/923114948262"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faWhatsapp} beat />
             </a>
           </span>
           <span>
-            <a href="mailto:asadkhaksar1122@gmail.com" target="_blank">
+            <a
+              href="mailto:asadkhaksar1122@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+            >
               {" "}
               <FontAwesomeIcon icon={faEnvelope} beat />
             </a>
           </span>
           <span>
-            <a href="https://github.com/asadkhaksar1122" target="_blank">
+            <a
+              href="https://github.com/asadkhaksar1122"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faGithub} beat />
             </a>
           </span>
           <span>
-            <a href="faLinkedin" target="_blank">
+            <a href="faLinkedin" rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} beat />
             </a>
           </span>

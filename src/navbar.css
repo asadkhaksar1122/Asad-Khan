@@ -2,7 +2,7 @@
 .mainnav{
     width: 30%;
     background-color: rgba(145, 10, 10, 0.7);
-        position: absolute;
+        position: fixed;
         top: 2px;
         left: 0px;
        min-height: 100vh;
@@ -19,7 +19,7 @@
     color: white;
 }
 .hamburger{
-    position: absolute;
+    position: fixed;
     top: 2px;
     left: 5px;
     z-index: 200;
