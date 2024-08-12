@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Asad-Khan/static/css/main.9375403a.css",
-    "main.js": "/Asad-Khan/static/js/main.4c634b42.js",
+    "main.js": "/Asad-Khan/static/js/main.968e47ae.js",
     "static/js/453.ac36254e.chunk.js": "/Asad-Khan/static/js/453.ac36254e.chunk.js",
     "static/media/background.jpg": "/Asad-Khan/static/media/background.0d9d6043c3bfc6395fee.jpg",
     "index.html": "/Asad-Khan/index.html",
     "main.9375403a.css.map": "/Asad-Khan/static/css/main.9375403a.css.map",
-    "main.4c634b42.js.map": "/Asad-Khan/static/js/main.4c634b42.js.map",
+    "main.968e47ae.js.map": "/Asad-Khan/static/js/main.968e47ae.js.map",
     "453.ac36254e.chunk.js.map": "/Asad-Khan/static/js/453.ac36254e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9375403a.css",
-    "static/js/main.4c634b42.js"
+    "static/js/main.968e47ae.js"
   ]
 }
