@@ -39,13 +39,13 @@ function Navbar(props) {
     checkfunc(check);
   }
   document.addEventListener("scroll", function (e) {
-   let hamburger = document.querySelector(".hamburger");
-  if (window.scrollY >= 500) {
-   
-    hamburger.style.color="black"
-  }
-  else {
-    hamburger.style.color="white"
+    let hamburger = document.querySelector(".hamburger");
+    let education = document.querySelector(".education")
+ 
+  if (window.scrollY >= education.offsetTop) {
+    hamburger.style.color = "black";
+  } else {
+    hamburger.style.color = "white";
   }
 });
   return (
