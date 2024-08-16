@@ -24,6 +24,12 @@ function Oneproject(props) {
 export default function Project() {
   let projects = [
     {
+      name: "I-Notebook",
+      description:
+        "This is an website to store, delete and edit note of specific user and login . it is made by using MERN technology ",
+      githubLink: "https://github.com/asadkhaksar1122/I-notebook",
+    },
+    {
       name: "Attendance Website",
       description:
         "This is an attendance website which mark present when the person click on button and have more features like mark leave by admin see absent students of one month and one week and all the other",
