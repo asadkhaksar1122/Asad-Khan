@@ -17,6 +17,7 @@
     font-size: 36px;
     margin-left: 5px;
     color: white;
+    cursor: pointer;
 }
 .hamburger{
     position: fixed;

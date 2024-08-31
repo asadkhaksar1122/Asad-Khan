@@ -1,19 +1,19 @@
 {
   "name": "Asad Khan",
-  "short_name": "asadkhan",
-  "description": "This is my protfolio",
-  "start_url": "/",
+  "short_name": "Asad Khan",
+  "description": "This is my portfolio",
+  "start_url": "/Asad-Khan/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "icon/android-chrome-192x192.png",
+      "src": "/Asad-Khan/icon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon/android-chrome-512x512.png",
+      "src": "/Asad-Khan/icon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
