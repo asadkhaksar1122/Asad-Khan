@@ -1,8 +1,15 @@
 import "./mainhead.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init({ offset: 120, duration: 600, mirror: true });
 function Main(props) {
   return (
-    <section className="mainfirstsect">
+    <section
+      className="mainfirstsect"
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+    >
       <div className="mainfirst">
         <div className="image">
           <img src="picture.jpg" alt="" />
@@ -13,7 +20,7 @@ function Main(props) {
             <h1>Asad Khan</h1>
           </a>
           <p>
-            Age : <strong>18 Year</strong>
+            Age : <strong>19 Year</strong>
           </p>
           <p>
             Address : <strong>Mahallah BalarKhel Zaida Swabi</strong>
@@ -24,6 +31,7 @@ function Main(props) {
           <a
             target="_blank"
             href="https://drive.google.com/file/d/1fi5G44nfOYKc3ON0-bu0Hj9PJVx8lCRR/view?usp=drivesdk"
+            rel="noreferrer"
           >
             My CV
           </a>

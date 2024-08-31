@@ -2,18 +2,21 @@ import React from "react";
 import "./project.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ offset: 0, duration: 600, mirror: true });
 function Oneproject(props) {
   return (
     <>
-      <div className="projectname">
+      <div className="projectname" data-aos="fade-right">
         <h2>{props.name}</h2>
       </div>
-      <div className="description">
+      <div className="description" data-aos="fade-left">
         <h2>{props.description}</h2>
       </div>
-      <div className="projectlink">
+      <div className="projectlink" data-aos="zoom-out">
         <h2>
-          <a href={props.link} target="_blank">
+          <a href={props.link} target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} beatFade /> &nbsp;Github Link
           </a>
         </h2>
@@ -23,6 +26,12 @@ function Oneproject(props) {
 }
 export default function Project() {
   let projects = [
+    {
+      name: "Task Reminder",
+      description:
+        'This is a MERN stack task reminder application that leverages MongoDB with Mongoose for the backend, Express for the server-side framework, React for the frontend, and Node.js for the runtime environment. Tasks can be added, edited, and deleted, with the ability to mark them as done using a "done" key for user reference.',
+      githubLink: "https://github.com/asadkhaksar1122/Task-Reminder",
+    },
     {
       name: "I-Notebook",
       description:

@@ -3,26 +3,29 @@ import "./contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressBook, faEnvelope } from "@fortawesome/free-solid-svg-icons"; // Solid icon
 import { faWhatsapp, faLinkedin } from "@fortawesome/free-brands-svg-icons"; // Brand icon
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ offset: 0, duration: 600, mirror: true });
 function Onecontact(props) {
   return (
-    <div className="maincontact all">
+    <div className="maincontact all" data-aos="fade-left">
       <div className="firstcontact">
         <h2>{props.name}</h2>
       </div>
-      <div className="secondcontact all">
+      <div className="secondcontact all" data-aos="fade-right">
         <h2>
           <span style={{ fontWeight: "400" }}>Contact:</span>
           {props.contactno}
         </h2>
       </div>
-      <div className="thiredcontact all">
+      <div className="thirdcontact all" data-aos="zoom-in-down">
         <h2>
-          <a href={props.link} target="_blank">
+          <a href={props.link} target="_blank" rel="noreferrer">
             {" "}
             <FontAwesomeIcon icon={props.icon} beatFade />
           </a>
         </h2>
-        <p style={{ lineHeight: "3px" }}>Click on button to contact me</p>
+        <p >Click on button to contact me</p>
       </div>
     </div>
   );

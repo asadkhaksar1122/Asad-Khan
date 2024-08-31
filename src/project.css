@@ -17,13 +17,17 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
-
+.description h2{
+  margin: 4px 0px;
+}
 .projectname {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 10px;
-}
 
+}
+.projectname h2{
+  margin: 3px 0px;
+}
 .description {
   font-size: 16px;
   color: #666;
@@ -34,7 +38,10 @@
   text-align: center;
   margin-top: 20px;
 }
-
+.projectlink h2 {
+  margin: 0px;
+  margin-bottom: 5px;
+}
 .projectlink a {
   text-decoration: none;
   color: #337ab7;

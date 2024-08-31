@@ -14,9 +14,12 @@ import {
   faPython,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ offset: 0, duration: 600, mirror: true });
 function Onescript(props) {
   return (
-    <div className="matric onescript">
+    <div className="matric onescript" data-aos={props.animation}>
       <h2>{props.name}</h2>
 
       <p>
@@ -34,7 +37,7 @@ function Onescript(props) {
       <p>
         Achievements<strong>{props.achievement}</strong>
       </p>
-      <a href={props.link} target="_blank">
+      <a href={props.link} target="_blank" rel="noreferrer">
         Look Certificate
       </a>
     </div>
@@ -43,7 +46,7 @@ function Onescript(props) {
 function Language(props) {
   return (
     <div className="languages">
-      <h3 className="heading">
+      <h3 className="heading" data-aos={props.animation}>
         {" "}
         <span className="icon">
           <FontAwesomeIcon icon={props.icon} beatFade /> &nbsp;
@@ -54,11 +57,13 @@ function Language(props) {
   );
 }
 export default function Education() {
+          
+
   return (
     <div className="education">
       <a name="education">
         {" "}
-        <h1>
+        <h1 data-aos="fade-right">
           {" "}
           <FontAwesomeIcon icon={faGraduationCap} fade />
           &nbsp;Education
@@ -73,6 +78,7 @@ export default function Education() {
           special="Science"
           achievement="I have got the 934 marks out of 1100"
           link="https://drive.google.com/file/d/1fiAh0ryeA8a6Xgqd4180fsrONpeLBWob/view?usp=drivesdk"
+          animation="flip-right"
         />
         <Onescript
           name="FSC (Computer Science)"
@@ -82,6 +88,7 @@ export default function Education() {
           special="Computer Science"
           achievement="I have got the 922 marks out of 1100"
           link="https://drive.google.com/file/d/1fiDnkfGjTaZAR27O7_DgtShqCcmRvTJz/view?usp=drivesdk"
+          animation="flip-left"
         />
       </div>
       <div className="programming">
@@ -90,16 +97,16 @@ export default function Education() {
           <FontAwesomeIcon icon={faCode} />
           &nbsp;Programing language
         </h2>
-        <Language name="HTML" icon={faHtml5} />
-        <Language name="CSS" icon={faCss3} />
-        <Language name="JAVASCRIPT" icon={faJs} />
-        <Language name="NODE JS" icon={faJs} />
-        <Language name="EXPRESS" icon={faJs} />
-        <Language name="REACT JS" icon={faReact} />
-        <Language name="MY SQL" icon={faDatabase} />
-        <Language name="MONGO DB" icon={faDatabase} />
-        <Language name="C++" icon={faC} />
-        <Language name="PYTHON" icon={faPython} />
+        <Language name="HTML" icon={faHtml5} animation="fade-right" />
+        <Language name="CSS" icon={faCss3} animation="fade-left" />
+        <Language name="JAVASCRIPT" icon={faJs} animation="fade-right" />
+        <Language name="NODE JS" icon={faJs} animation="fade-left" />
+        <Language name="EXPRESS" icon={faJs} animation="fade-right" />
+        <Language name="REACT JS" icon={faReact} animation="fade-left" />
+        <Language name="MY SQL" icon={faDatabase}  animation="fade-right" />
+        <Language name="MONGO DB" icon={faDatabase} animation="fade-left"  />
+        <Language name="C++" icon={faC} animation="fade-right" />
+        <Language name="PYTHON" icon={faPython} animation="fade-left" />
       </div>
     </div>
   );

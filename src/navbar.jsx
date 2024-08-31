@@ -1,4 +1,6 @@
 import "./navbar.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -14,7 +16,9 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+AOS.init({ offset: 120, duration: 500 });
 function Navbar(props) {
+ 
  let [toggle, settoggle] = useState("");
   function checkfunc(input) {
     let hamburger = document.getElementById("hamburger");
@@ -26,7 +30,17 @@ function Navbar(props) {
       settoggle("");
     }
   }
- 
+   document.addEventListener("scroll", function (e) {
+     let hamburger = document.querySelector(".hamburger");
+     let education = document.querySelector(".education");
+
+     if (window.scrollY >= education.offsetTop) {
+       hamburger.style.color = "black";
+     } else {
+       hamburger.style.color = "white";
+     }
+   });
+
   function changehandle(e) {
     let input = e.target;
     checkfunc(input);
@@ -34,27 +48,17 @@ function Navbar(props) {
   function switchoff() {
     let check = document.getElementById("check");
     console.log("the profile was clicked");
-    console.dir(check);
     check.checked = false;
     checkfunc(check);
   }
-  document.addEventListener("scroll", function (e) {
-    let hamburger = document.querySelector(".hamburger");
-    let education = document.querySelector(".education")
- 
-  if (window.scrollY >= education.offsetTop) {
-    hamburger.style.color = "black";
-  } else {
-    hamburger.style.color = "white";
-  }
-});
+
   return (
     <nav>
       <div className="checkbox">
         <input type="checkbox" id="check" onChange={changehandle} />
       </div>
       <label htmlFor="check">
-        <div className="hamburger" id="hamburger">
+        <div className="hamburger" id="hamburger" >
           <FontAwesomeIcon icon={faBars} flip />
         </div>
       </label>

@@ -1,21 +1,10 @@
-@keyframes rotatepic {
-  from {
-    transform: rotateY(0deg); /* Start at 0 degrees */
-  }
-  to {
-    transform: rotateY(360deg); /* Rotate to 360 degrees */
-  }
-}
+
+
 .image img {
   width: 10rem;
   border: 1px solid white;
   border-radius: 17px;
   margin-right: 13px;
- animation-name: rotatepic;
- animation-duration: 3s;
- animation-timing-function: ease-in-out;
- animation-delay: 5s;
- animation-iteration-count: infinite;
 }
 
 .content {
@@ -70,7 +59,7 @@
   color: white;
   text-decoration: none;
   display: inline-block;
-  
+ 
 }
 
 .profilea {
@@ -88,6 +77,9 @@
 .content p {
   font-size: 18px;
   color: white;
+   animation-name: rotatepic;
+
+
 }
 
 .mainfirstsect {

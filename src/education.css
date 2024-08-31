@@ -1,37 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 .education {
   background: white;
-color: black !important;
-font-family: "Lato", sans-serif;
+  color: black !important;
+  font-family: "Lato", sans-serif;
   font-weight: 100;
   font-style: normal;
-
 }
-.education h1{
+.education h1 {
   color: black;
   margin-left: 3px;
 }
-.onescript{
+.onescript {
   padding: 2px 32px;
   padding-bottom: 15px;
   margin-bottom: 5px;
 }
-.onescript h2{
+.onescript h2 {
   color: black;
 }
-.onescript p{
-    color: black;
-    line-height: 25px;
+.onescript p {
+  color: black;
+  line-height: 25px;
   font-weight: 100;
   font-style: normal;
   margin-left: 23px;
- font-weight: 400;
-   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
 }
-.onescript a{
+.onescript a {
   color: black;
   margin-left: 23px;
   font-weight: bold;
@@ -42,73 +40,76 @@ font-family: "Lato", sans-serif;
   text-decoration: none;
   transition: all 0.2s linear;
 }
-.onescript a:hover{
+.onescript a:hover {
   background-color: antiquewhite;
 }
-.onescript p strong{
+.onescript p strong {
   margin-left: 6px;
   color: black;
 }
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Light background for contrast */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background for contrast */
 }
 
 .programming {
-    background-color: #fff; /* White background for the section */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 10px auto; /* Center the section */
-    max-width: 600px; /* Maximum width for larger screens */
+  background-color: #fff; /* White background for the section */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px auto; /* Center the section */
+  max-width: 600px; /* Maximum width for larger screens */
+
 }
+
+
+
 .programming h2 {
-    font-size: 24px;
-    color: #333; /* Dark text color */
-    display: flex; /* Flexbox for icon and text alignment */
-    align-items: center; /* Center items vertically */
+  font-size: 24px;
+  color: #333; /* Dark text color */
+  display: flex; /* Flexbox for icon and text alignment */
+  align-items: center; /* Center items vertically */
 }
 .icon {
   font-weight: bolder;
   font-size: 28px;
 }
-.heading{
+.heading {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .programming h2 .faComputer {
-    margin-right: 10px; /* Space between icon and text */
+  margin-right: 10px; /* Space between icon and text */
 }
 
 .languages {
-    margin-top: 2px;
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .languages h3 {
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* White text */
-    padding: 10px 15px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    margin: 5px; /* Space around each language */
-    flex: 1 1 calc(45% - 10px); /* Responsive width with some margin */
-    text-align: center; /* Center text */
-    transition: background-color 0.3s; /* Smooth transition */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  margin: 5px; /* Space around each language */
+  flex: 1 1 calc(45% - 10px); /* Responsive width with some margin */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s; /* Smooth transition */
 }
 
 .languages h3:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-    .languages h3 {
-        flex: 1 1 100%; /* Full width on small screens */
-    }
+  .languages h3 {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
 }
