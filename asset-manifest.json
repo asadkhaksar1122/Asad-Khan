@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Asad-Khan/static/css/main.9375403a.css",
-    "main.js": "/Asad-Khan/static/js/main.04d5fadc.js",
+    "main.css": "/Asad-Khan/static/css/main.794f942d.css",
+    "main.js": "/Asad-Khan/static/js/main.adf02e25.js",
     "static/js/453.ac36254e.chunk.js": "/Asad-Khan/static/js/453.ac36254e.chunk.js",
     "static/media/background.jpg": "/Asad-Khan/static/media/background.0d9d6043c3bfc6395fee.jpg",
     "index.html": "/Asad-Khan/index.html",
-    "main.9375403a.css.map": "/Asad-Khan/static/css/main.9375403a.css.map",
-    "main.04d5fadc.js.map": "/Asad-Khan/static/js/main.04d5fadc.js.map",
+    "main.794f942d.css.map": "/Asad-Khan/static/css/main.794f942d.css.map",
+    "main.adf02e25.js.map": "/Asad-Khan/static/js/main.adf02e25.js.map",
     "453.ac36254e.chunk.js.map": "/Asad-Khan/static/js/453.ac36254e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9375403a.css",
-    "static/js/main.04d5fadc.js"
+    "static/css/main.794f942d.css",
+    "static/js/main.adf02e25.js"
   ]
 }
