@@ -59,7 +59,7 @@ function Navbar(props) {
       </div>
       <label htmlFor="check">
         <div className="hamburger" id="hamburger" >
-          <FontAwesomeIcon icon={faBars} flip />
+          <FontAwesomeIcon icon={faBars}  />
         </div>
       </label>
       <div className={`mainnav ${toggle}`}>
@@ -79,23 +79,23 @@ function Navbar(props) {
           <div className="firstitem  item">
             <a href="#profile" onClick={switchoff}>
               {" "}
-              <FontAwesomeIcon icon={faUser} beatFade /> &nbsp; Profile
+              <FontAwesomeIcon icon={faUser}  /> &nbsp; Profile
             </a>
           </div>
           <div className="firstitem item">
             <a href="#education" onClick={switchoff}>
-              <FontAwesomeIcon icon={faGraduationCap} beatFade /> &nbsp;
+              <FontAwesomeIcon icon={faGraduationCap}  /> &nbsp;
               Education
             </a>
           </div>
           <div className="firstitem item">
             <a href="#contact" onClick={switchoff}>
-              <FontAwesomeIcon icon={faAddressBook} beatFade /> &nbsp; Contact
+              <FontAwesomeIcon icon={faAddressBook}  /> &nbsp; Contact
             </a>
           </div>
           <div className="firstitem item">
             <a href="#projects" onClick={switchoff}>
-              <FontAwesomeIcon icon={faGithub} beatFade /> &nbsp; Github Project
+              <FontAwesomeIcon icon={faGithub}  /> &nbsp; Github Project
             </a>
           </div>
         </div>
@@ -106,7 +106,7 @@ function Navbar(props) {
               rel="noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faWhatsapp} beat />
+              <FontAwesomeIcon icon={faWhatsapp}  />
             </a>
           </span>
           <span>
@@ -116,7 +116,7 @@ function Navbar(props) {
               target="_blank"
             >
               {" "}
-              <FontAwesomeIcon icon={faEnvelope} beat />
+              <FontAwesomeIcon icon={faEnvelope}  />
             </a>
           </span>
           <span>
@@ -125,12 +125,12 @@ function Navbar(props) {
               rel="noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faGithub} beat />
+              <FontAwesomeIcon icon={faGithub}  />
             </a>
           </span>
           <span>
             <a href="faLinkedin" rel="noreferrer" target="_blank">
-              <FontAwesomeIcon icon={faLinkedin} beat />
+              <FontAwesomeIcon icon={faLinkedin}  />
             </a>
           </span>
         </div>

@@ -22,7 +22,7 @@ function Onecontact(props) {
         <h2>
           <a href={props.link} target="_blank" rel="noreferrer">
             {" "}
-            <FontAwesomeIcon icon={props.icon} beatFade />
+            <FontAwesomeIcon icon={props.icon}  />
           </a>
         </h2>
         <p >Click on button to contact me</p>
