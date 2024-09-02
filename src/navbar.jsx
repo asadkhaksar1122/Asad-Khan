@@ -15,19 +15,21 @@ import {
   faWhatsapp,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+import { useRef, useState } from "react";
 AOS.init({ offset: 120, duration: 500 });
 function Navbar(props) {
- 
+ let fordiv=useRef(null)
  let [toggle, settoggle] = useState("");
   function checkfunc(input) {
     let hamburger = document.getElementById("hamburger");
     if (input.checked) {
       hamburger.style.display = "none";
       settoggle("toggle");
+      fordiv.current.style.display="block"
     } else {
       hamburger.style.display = "block";
       settoggle("");
+       fordiv.current.style.display = "none";
     }
   }
    document.addEventListener("scroll", function (e) {
@@ -54,87 +56,90 @@ function Navbar(props) {
 
   return (
     <nav>
-      <div className="checkbox">
-        <input type="checkbox" id="check" onChange={changehandle} />
-      </div>
-      <label htmlFor="check">
-        <div className="hamburger" id="hamburger" >
-          <FontAwesomeIcon icon={faBars}  />
+      
+        <div className="checkbox">
+          <input type="checkbox" id="check" onChange={changehandle} />
         </div>
-      </label>
-      <div className={`mainnav ${toggle}`}>
         <label htmlFor="check">
-          <div className="cross">
-            <span>
-              {" "}
-              <FontAwesomeIcon icon={faXmark} shake />
-            </span>
+          <div className="hamburger" id="hamburger">
+            <FontAwesomeIcon icon={faBars} />
           </div>
         </label>
-        <div className="logo">
-          <img src="picture.jpg" alt="" srcset="" />
-          <p>Asad Khan</p>
+        <div className={`mainnav ${toggle}`}>
+          <label htmlFor="check">
+            <div className="cross">
+              <span>
+                {" "}
+                <FontAwesomeIcon icon={faXmark} shake />
+              </span>
+            </div>
+          </label>
+          <div className="logo">
+            <img src="picture.jpg" alt="" srcset="" />
+            <p>Asad Khan</p>
+          </div>
+          <div className="list">
+            <div className="firstitem  item">
+              <a href="#profile" onClick={switchoff}>
+                {" "}
+                <FontAwesomeIcon icon={faUser} /> &nbsp; Profile
+              </a>
+            </div>
+            <div className="firstitem item">
+              <a href="#education" onClick={switchoff}>
+                <FontAwesomeIcon icon={faGraduationCap} /> &nbsp; Education
+              </a>
+            </div>
+            <div className="firstitem item">
+              <a href="#contact" onClick={switchoff}>
+                <FontAwesomeIcon icon={faAddressBook} /> &nbsp; Contact
+              </a>
+            </div>
+            <div className="firstitem item">
+              <a href="#projects" onClick={switchoff}>
+                <FontAwesomeIcon icon={faGithub} /> &nbsp; Github Project
+              </a>
+            </div>
+          </div>
+          <div className="socialicon">
+            <span>
+              <a
+                href="https://wa.me/923114948262"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faWhatsapp} />
+              </a>
+            </span>
+            <span>
+              <a
+                href="mailto:asadkhaksar1122@gmail.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {" "}
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://github.com/asadkhaksar1122"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </span>
+            <span>
+              <a href="faLinkedin" rel="noreferrer" target="_blank">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </span>
+          </div>
         </div>
-        <div className="list">
-          <div className="firstitem  item">
-            <a href="#profile" onClick={switchoff}>
-              {" "}
-              <FontAwesomeIcon icon={faUser}  /> &nbsp; Profile
-            </a>
-          </div>
-          <div className="firstitem item">
-            <a href="#education" onClick={switchoff}>
-              <FontAwesomeIcon icon={faGraduationCap}  /> &nbsp;
-              Education
-            </a>
-          </div>
-          <div className="firstitem item">
-            <a href="#contact" onClick={switchoff}>
-              <FontAwesomeIcon icon={faAddressBook}  /> &nbsp; Contact
-            </a>
-          </div>
-          <div className="firstitem item">
-            <a href="#projects" onClick={switchoff}>
-              <FontAwesomeIcon icon={faGithub}  /> &nbsp; Github Project
-            </a>
-          </div>
-        </div>
-        <div className="socialicon">
-          <span>
-            <a
-              href="https://wa.me/923114948262"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faWhatsapp}  />
-            </a>
-          </span>
-          <span>
-            <a
-              href="mailto:asadkhaksar1122@gmail.com"
-              rel="noreferrer"
-              target="_blank"
-            >
-              {" "}
-              <FontAwesomeIcon icon={faEnvelope}  />
-            </a>
-          </span>
-          <span>
-            <a
-              href="https://github.com/asadkhaksar1122"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faGithub}  />
-            </a>
-          </span>
-          <span>
-            <a href="faLinkedin" rel="noreferrer" target="_blank">
-              <FontAwesomeIcon icon={faLinkedin}  />
-            </a>
-          </span>
-        </div>
-      </div>
+      <label htmlFor="check">
+        <div className="forother" ref={fordiv}></div>
+      </label>
     </nav>
   );
 }
