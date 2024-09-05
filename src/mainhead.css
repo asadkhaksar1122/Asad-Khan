@@ -1,5 +1,3 @@
-
-
 .image img {
   width: 10rem;
   border: 1px solid white;
@@ -11,47 +9,33 @@
   color: black;
 }
 
-@keyframes changecolor {
-  from {
-    background: linear-gradient(
-      90deg,
-      rgba(180, 58, 167, 0.8715861344537815) 0%,
-      rgba(41, 253, 29, 0.8295693277310925) 50%,
-      rgba(252, 238, 69, 0.8099614845938375) 100%
-    );
-    -webkit-background-clip: text; /* For Safari */
-    background-clip: text;
-  }
-  to {
-    background: linear-gradient(
-      90deg,
-      rgba(252, 238, 69, 1) 0%,
-      rgba(41, 253, 29, 0.8295693277310925) 50%,
-      rgba(180, 58, 167, 1) 100%
-    );
-    -webkit-background-clip: text; /* For Safari */
-    background-clip: text;
-  }
-}
-
 .content h1 {
   font-size: 45px;
   line-height: 1; /* Changed to 1 for better spacing */
   margin-bottom: 0;
   margin-top: 0;
+  width: 473px;
   overflow: hidden;
-  background: linear-gradient(
-    90deg,
-    rgba(180, 58, 167, 0.8715861344537815) 0%,
-    rgba(41, 253, 29, 0.8295693277310925) 50%,
-    rgba(252, 238, 69, 0.8099614845938375) 100%
-  );
-  -webkit-background-clip: text; /* For Safari */
-  background-clip: text; /* For other browsers */
-  color: transparent; /* Hide the original text color */
-  animation: changecolor 2s infinite linear;
+  white-space: nowrap; /* Prevents text from wrapping */
+  border-right: 4px solid; /* Creates the typing cursor effect */
+  animation: typing 7s steps(40, end) infinite,
+    blink-caret 0.75s step-end infinite;
 }
+    @keyframes typing {
+            0% { width: 0; }
+            60% { width: 290px; } /* Typing animation duration */
+            100% { width: 290px; } /* Hold the text for the remaining time */
+        }
 
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
 .content a {
   border: 1px solid white;
   padding: 5px 16px;
@@ -60,7 +44,6 @@
   color: white;
   text-decoration: none;
   display: inline-block;
- 
 }
 
 .profilea {
@@ -78,9 +61,7 @@
 .content p {
   font-size: 18px;
   color: white;
-   animation-name: rotatepic;
-
-
+  animation-name: rotatepic;
 }
 
 .mainfirstsect {
