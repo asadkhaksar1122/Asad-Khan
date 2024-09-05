@@ -49,7 +49,7 @@ function Language(props) {
       <h3 className="heading" data-aos={props.animation}>
         {" "}
         <span className="icon">
-          <FontAwesomeIcon icon={props.icon} beatFade /> &nbsp;
+          <FontAwesomeIcon icon={props.icon}  /> &nbsp;
         </span>
         <span className="languagename">{props.name}</span>
       </h3>
