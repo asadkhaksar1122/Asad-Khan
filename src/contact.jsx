@@ -54,7 +54,7 @@ export default function Contact() {
           link="mailto:asadkhaksar1122@gmail.com"
         />
         <Onecontact
-          name="Linkeden"
+          name="Linkedin"
           contactno="Asad Khaksar"
           icon={faLinkedin}
           link="https://www.linkedin.com/in/asad-khan-5101b6316"

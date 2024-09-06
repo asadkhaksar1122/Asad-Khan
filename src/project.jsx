@@ -7,21 +7,27 @@ import "aos/dist/aos.css";
 AOS.init({ offset: 0, duration: 600, mirror: true });
 function Oneproject(props) {
   return (
-    <>
-      <div className="projectname" data-aos="fade-right">
-        <h2>{props.name}</h2>
+    <div class="card">
+      <div class="heading">
+        <h1>{props.name}</h1>
       </div>
-      <div className="description" data-aos="fade-left">
-        <h2>{props.description}</h2>
+      <div class="imagediv">
+        <img src={props.image} alt="Simon Game" srcset="" />
+        <div class="overlay">
+          <div class="description">
+            <p>{props.description}</p>
+          </div>
+          <div class="btn">
+            <button>
+              <a href={props.link} target="_blank">
+                <FontAwesomeIcon icon={faGithub} /> &nbsp;
+                Github
+              </a>
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="projectlink" data-aos="zoom-out">
-        <h2>
-          <a href={props.link} target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub} beatFade /> &nbsp;Github Link
-          </a>
-        </h2>
-      </div>
-    </>
+    </div>
   );
 }
 export default function Project() {
@@ -31,52 +37,61 @@ export default function Project() {
       description:
         'This is a MERN stack task reminder application that leverages MongoDB with Mongoose for the backend, Express for the server-side framework, React for the frontend, and Node.js for the runtime environment. Tasks can be added, edited, and deleted, with the ability to mark them as done using a "done" key for user reference.',
       githubLink: "https://github.com/asadkhaksar1122/Task-Reminder",
+      imageurl: "images/taskreminder.webp",
     },
     {
       name: "I-Notebook",
       description:
-        "This is an website to store, delete and edit note of specific user and login . it is made by using MERN technology ",
+        "Welcome to our modern platform built with MERN stack for efficient user-specific note management. Enjoy seamless storage, deletion, and editing upon login, with a focus on simplicity and security. Benefit from a sleek user interface for easy organization of ideas, tasks, and reminders. Trust us for a secure and intuitive note-taking experience that prioritizes productivity and organization",
       githubLink: "https://github.com/asadkhaksar1122/I-notebook",
+      imageurl: "images/inotebook.avif",
     },
+
     {
-      name: "Attendance Website",
+      name: "Coding Quiz",
       description:
-        "This is an attendance website which mark present when the person click on button and have more features like mark leave by admin see absent students of one month and one week and all the other",
-      githubLink: "https://github.com/asadkhaksar1122/Attendence-website-",
-    },
-    {
-      name: "Product project",
-      description:
-        "In this project customer can make profile and can upload the profile picture change the his name and upload the product details and picture",
-      githubLink: "https://github.com/asadkhaksar1122/Product",
+        "The coding quiz app in React utilizes useReducer for managing complex state logic efficiently. By dispatching actions based on user interactions, handling language quizzes becomes organized and predictable. This leads to a maintainable codebase and improves user experience while navigating quizzes.",
+      githubLink: "https://github.com/asadkhaksar1122/Coding-quiz",
+      imageurl: "images/quiz.png",
     },
     {
       name: "Simon Game",
-      description: "This is a Simon Game",
+      description:
+        "Experience the classic Simon Game brought to life with HTML, CSS, and JavaScript. Test your memory and reflexes as you follow and repeat the pattern of lights and sounds. Have fun challenging yourself with this exciting electronic game!",
       githubLink: "https://github.com/asadkhaksar1122/simon-game",
+      imageurl: "images/simon.jpg",
+    },
+    {
+      name: "TextUtils",
+      description:
+        "Using React, I have developed a TextUtils application that generates a comprehensive description of its features, including text transformation, analysis, cleaning, formatting, and clipboard operations, making it an essential tool for efficient text management.",
+      githubLink: "https://github.com/asadkhaksar1122/Textutils",
+      imageurl: "images/texturils.png",
     },
     {
       name: "Other projects",
       description:
         "I have a lot of projects in my GitHub Account please visit and look there",
       githubLink: "https://github.com/asadkhaksar1122",
+      imageurl: "images/otherproject.png",
     },
   ];
   return (
     <section className="mainsection">
-      <a name="projects">
-        <h1>
-          {" "}
-          <FontAwesomeIcon icon={faGithub} fade /> &nbsp; Projects
-        </h1>
-      </a>
-      {projects.map((project) => (
-        <Oneproject
-          name={project.name}
-          description={project.description}
-          link={project.githubLink}
-        />
-      ))}
+      <h1 id="projects">
+        {" "}
+        <FontAwesomeIcon icon={faGithub} fade /> &nbsp; Projects
+      </h1>
+      <div className="maincard">
+        {projects.map((project) => (
+          <Oneproject
+            name={project.name}
+            description={project.description}
+            link={project.githubLink}
+            image={project.imageurl}
+          />
+        ))}
+      </div>
     </section>
   );
 }

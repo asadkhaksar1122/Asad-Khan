@@ -23,8 +23,8 @@
 }
     @keyframes typing {
             0% { width: 0; }
-            60% { width: 290px; } /* Typing animation duration */
-            100% { width: 290px; } /* Hold the text for the remaining time */
+            60% { width: 290px; } 
+            100% { width: 290px; } 
         }
 
 @keyframes blink-caret {
