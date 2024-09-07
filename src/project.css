@@ -1,23 +1,23 @@
-.maincard{
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+.maincard {
   display: flex;
   flex-wrap: wrap;
   background: black;
   justify-content: space-between;
 }
-.mainsection{
-  background:white;
+.mainsection {
+  background: white;
 }
 .card {
   position: relative;
-  width: 400px; 
+  width: 400px;
   margin: 0px 5px;
+   font-family: "Bitter", serif;
   background: white;
   margin-bottom: 4px;
   flex-grow: 1;
- 
-;
 }
-.btn button a{
+.btn button a {
   color: white;
   text-decoration: none;
 }
@@ -71,4 +71,7 @@
 
 .btn button:hover {
   background-color: #0056b3;
+}
+.livelink{
+  margin-left: 10px;
 }
