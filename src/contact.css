@@ -26,9 +26,11 @@ html{
 }
 .thirdcontact p{
     margin: 0px;
+    line-height: 1;
 }
 .all a{
-    background-color: rgb(56, 255, 139);
+    /* background-color: rgb(56, 255, 139); */
+    background-color: aliceblue;
     padding: 5px 10px;
     color: black;
     font-size: 34px;
@@ -38,8 +40,12 @@ html{
     text-align: center;
     transition: all 0.3s linear;
 }
+.all a img{
+    width: 50px;
+}
 .all a:hover{
-    background-color: rgb(33, 224, 113);
+    /* background-color: rgb(33, 224, 113); */
+    border: 1px solid rgb(170, 170, 170);
 }
 @media(max-width:600px){
     .maincontact{

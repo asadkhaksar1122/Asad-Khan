@@ -22,7 +22,7 @@ function Onecontact(props) {
         <h2>
           <a href={props.link} target="_blank" rel="noreferrer">
             {" "}
-            <FontAwesomeIcon icon={props.icon}  />
+          <img src={`navbaricon/${props.icon}`} alt="" srcset="" />
           </a>
         </h2>
         <p >Click on button to contact me</p>
@@ -44,19 +44,19 @@ export default function Contact() {
         <Onecontact
           name="Whatsapp"
           contactno="+923114948262"
-          icon={faWhatsapp}
+          icon={"Whatsapp.png"}
           link="https://wa.me/923114948262"
         />
         <Onecontact
           name="Gmail"
           contactno="Asadkhaksar1122@gmail.com"
-          icon={faEnvelope}
+          icon={"gmail.png"}
           link="mailto:asadkhaksar1122@gmail.com"
         />
         <Onecontact
           name="Linkedin"
           contactno="Asad Khaksar"
-          icon={faLinkedin}
+          icon={"Linkedin.png"}
           link="https://www.linkedin.com/in/asad-khan-5101b6316"
         />
       </div>
