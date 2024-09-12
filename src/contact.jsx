@@ -22,7 +22,7 @@ function Onecontact(props) {
         <h2>
           <a href={props.link} target="_blank" rel="noreferrer">
             {" "}
-          <img src={`navbaricon/${props.icon}`} alt="" srcset="" />
+          <img src={`${props.icon}`} alt="" srcset="" />
           </a>
         </h2>
         <p >Click on button to contact me</p>
@@ -37,27 +37,45 @@ export default function Contact() {
         <a name="contact">
           {" "}
           <h1 style={{ color: "black !important" }}>
-            <FontAwesomeIcon style={{ color: "black" }} fade icon={faAddressBook} />
+            <FontAwesomeIcon
+              style={{ color: "black" }}
+              fade
+              icon={faAddressBook}
+            />
             &nbsp;Contact
           </h1>
         </a>
         <Onecontact
           name="Whatsapp"
           contactno="+923114948262"
-          icon={"Whatsapp.png"}
+          icon={
+            "https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/whatsapp_oqb9pd.png"
+          }
           link="https://wa.me/923114948262"
         />
         <Onecontact
           name="Gmail"
           contactno="Asadkhaksar1122@gmail.com"
-          icon={"gmail.png"}
+          icon={
+            "https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/gmail_cgthvz.png"
+          }
           link="mailto:asadkhaksar1122@gmail.com"
         />
         <Onecontact
           name="Linkedin"
-          contactno="Asad Khaksar"
-          icon={"Linkedin.png"}
+          contactno="Asad Khan"
+          icon={
+            "https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/linkedin_ozusit.png"
+          }
           link="https://www.linkedin.com/in/asad-khan-5101b6316"
+        />
+        <Onecontact
+          name="Facebook"
+          contactno="Asad Khan"
+          icon={
+            "https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/facebook_kbumpy.png"
+          }
+          link="https://www.facebook.com/asadkhaksar1122?mibextid=ZbWKwL"
         />
       </div>
     </div>

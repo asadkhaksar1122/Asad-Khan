@@ -107,7 +107,11 @@ function Navbar(props) {
               rel="noreferrer"
               target="_blank"
             >
-              <img src="navbaricon/whatsapp.png" alt="" srcset="" />
+              <img
+                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/whatsapp_oqb9pd.png"
+                alt=""
+                srcset=""
+              />
             </a>
           </span>
           <span>
@@ -117,7 +121,11 @@ function Navbar(props) {
               target="_blank"
             >
               {" "}
-              <img src="navbaricon/gmail.png" alt="" srcset="" />
+              <img
+                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/gmail_cgthvz.png"
+                alt=""
+                srcset=""
+              />
             </a>
           </span>
           <span>
@@ -126,12 +134,24 @@ function Navbar(props) {
               rel="noreferrer"
               target="_blank"
             >
-              <img src="navbaricon/github.png" alt="" srcset="" />
+              <img
+                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/github_nkz6qt.png"
+                alt=""
+                srcset=""
+              />
             </a>
           </span>
           <span>
-            <a href="faLinkedin" rel="noreferrer" target="_blank">
-              <img src="navbaricon/linkedin.png" alt="" srcset="" />
+            <a
+              href="https://www.linkedin.com/in/asad-khan-5101b6316"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/linkedin_ozusit.png"
+                alt=""
+                srcset=""
+              />
             </a>
           </span>
         </div>
