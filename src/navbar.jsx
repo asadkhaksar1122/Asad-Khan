@@ -130,6 +130,20 @@ function Navbar(props) {
           </span>
           <span>
             <a
+              href="https://www.facebook.com/asadkhaksar1122?mibextid=ZbWKwL"
+              rel="noreferrer"
+              target="_blank"
+            >
+              {" "}
+              <img
+                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/facebook_kbumpy.png"
+                alt=""
+                srcset=""
+              />
+            </a>
+          </span>
+          <span>
+            <a
               href="https://github.com/asadkhaksar1122"
               rel="noreferrer"
               target="_blank"

@@ -1,8 +1,8 @@
 import React from "react";
 import "./contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAddressBook, faEnvelope } from "@fortawesome/free-solid-svg-icons"; // Solid icon
-import { faWhatsapp, faLinkedin } from "@fortawesome/free-brands-svg-icons"; // Brand icon
+import { faAddressBook } from "@fortawesome/free-solid-svg-icons"; // Solid icon
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init({ offset: 0, duration: 600, mirror: true });
