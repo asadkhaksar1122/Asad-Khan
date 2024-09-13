@@ -23,7 +23,7 @@ function Main(props) {
             Age : <strong>19 Year</strong>
           </p>
           <p>
-            Address : <strong>Mahallah BalarKhel Zaida Swabi</strong>
+            Address : <strong>Zaida,Swabi,Khyber Pakhtunkhwa,Pakistan </strong>
           </p>
           <p>
             Specialization : <strong>Web Devolpment </strong>
