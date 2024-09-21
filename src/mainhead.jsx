@@ -30,7 +30,7 @@ function Main(props) {
           </p>
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1pvN6lJBMcuB9jaAg6l5AkDabyvbNkest/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1tMAK6Q0xkdRA3-L-jthHizUflXTT1Ppr/view?usp=drivesdk"
             rel="noreferrer"
           >
             My CV

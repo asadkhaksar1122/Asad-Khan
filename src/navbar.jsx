@@ -107,11 +107,7 @@ function Navbar(props) {
               rel="noreferrer"
               target="_blank"
             >
-              <img
-                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/whatsapp_oqb9pd.png"
-                alt=""
-                srcset=""
-              />
+              <img src="./navbaricon/whatsapp.png" alt="" srcset="" />
             </a>
           </span>
           <span>
@@ -121,11 +117,7 @@ function Navbar(props) {
               target="_blank"
             >
               {" "}
-              <img
-                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/gmail_cgthvz.png"
-                alt=""
-                srcset=""
-              />
+              <img src="./navbaricon/gmail.png" alt="" srcset="" />
             </a>
           </span>
           <span>
@@ -135,11 +127,7 @@ function Navbar(props) {
               target="_blank"
             >
               {" "}
-              <img
-                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/facebook_kbumpy.png"
-                alt=""
-                srcset=""
-              />
+              <img src="./navbaricon/facebook.png" alt="" srcset="" />
             </a>
           </span>
           <span>
@@ -148,11 +136,7 @@ function Navbar(props) {
               rel="noreferrer"
               target="_blank"
             >
-              <img
-                src="https://res.cloudinary.com/diinrpqko/image/upload/v1726114472/github_nkz6qt.png"
-                alt=""
-                srcset=""
-              />
+              <img src="./navbaricon/github.png" alt="" srcset="" />
             </a>
           </span>
           <span>
