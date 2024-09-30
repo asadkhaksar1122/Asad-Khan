@@ -76,12 +76,12 @@ export default function Project() {
       livelink: "https://asadkhaksar1122.github.io/simon-game/",
     },
     {
-      name: "TextUtils",
+      name: "Keeper App",
       description:
-        "Using React, I have developed a TextUtils application that generates a comprehensive description of its features, including text transformation, analysis, cleaning, formatting, and clipboard operations, making it an essential tool for efficient text management.",
+        'I have developed a note-taking application called "Keeper App" which is built using React. The application features SweetAlert for enhanced alert notifications.',
       githubLink: "https://github.com/asadkhaksar1122/Textutils",
-      imageurl: "./navbaricon/texturils.png",
-      livelink: "https://asadkhaksar1122.github.io/Textutils/",
+      imageurl: "./navbaricon/keeper.svg",
+      livelink: "https://asadkhaksar1122.github.io/Keeper-App/",
     },
     {
       name: "Note app",
