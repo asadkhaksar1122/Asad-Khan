@@ -59,6 +59,14 @@ export default function Project() {
       githubLink: "https://github.com/asadkhaksar1122/I-notebook",
       imageurl: "./navbaricon/inotebook.avif",
     },
+      {
+      name: "Keeper App",
+      description:
+        'I have developed a note-taking application called "Keeper App" which is built using React. The application features SweetAlert for enhanced alert notifications.',
+      githubLink: "https://github.com/asadkhaksar1122/Textutils",
+      imageurl: "./navbaricon/keeper.svg",
+      livelink: "https://asadkhaksar1122.github.io/Keeper-App/",
+    },
     {
       name: "Coding Quiz",
       description:
@@ -75,14 +83,7 @@ export default function Project() {
       imageurl: "./navbaricon/simon.jpg",
       livelink: "https://asadkhaksar1122.github.io/simon-game/",
     },
-    {
-      name: "Keeper App",
-      description:
-        'I have developed a note-taking application called "Keeper App" which is built using React. The application features SweetAlert for enhanced alert notifications.',
-      githubLink: "https://github.com/asadkhaksar1122/Textutils",
-      imageurl: "./navbaricon/keeper.svg",
-      livelink: "https://asadkhaksar1122.github.io/Keeper-App/",
-    },
+  
     {
       name: "Note app",
       description:

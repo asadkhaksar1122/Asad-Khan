@@ -9,16 +9,15 @@ function Main(props) {
       className="mainfirstsect"
       data-aos="zoom-in"
       data-aos-anchor-placement="top-bottom"
+      id="profile"
     >
       <div className="mainfirst">
         <div className="image">
           <img src="picture.jpg" alt="" />
         </div>
         <div className="content">
-          <a name="profile" className="profilea">
-            {" "}
-            <h1>Asad Khan</h1>
-          </a>
+          {" "}
+          <h1>Asad Khan</h1>
           <p>
             Age : <strong>19 Year</strong>
           </p>

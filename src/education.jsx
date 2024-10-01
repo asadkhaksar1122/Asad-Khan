@@ -5,7 +5,7 @@ import {
   faGraduationCap,
   faDatabase,
   faC,
-  faCode
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faCss3,
@@ -49,7 +49,7 @@ function Language(props) {
       <h3 className="heading" data-aos={props.animation}>
         {" "}
         <span className="icon">
-          <FontAwesomeIcon icon={props.icon}  /> &nbsp;
+          <FontAwesomeIcon icon={props.icon} /> &nbsp;
         </span>
         <span className="languagename">{props.name}</span>
       </h3>
@@ -57,8 +57,6 @@ function Language(props) {
   );
 }
 export default function Education() {
-          
-
   return (
     <div className="education">
       <a name="education">
@@ -77,7 +75,7 @@ export default function Education() {
           year="June 2019"
           special="Science"
           achievement="I have got the 934 marks out of 1100"
-          link="https://drive.google.com/file/d/1fiAh0ryeA8a6Xgqd4180fsrONpeLBWob/view?usp=drivesdk"
+          link="https://drive.google.com/file/d/1zrMs1XMOxyrqDRAUbTG38fwDl2CPpg2K/view?usp=drivesdk"
           animation="flip-right"
         />
         <Onescript
@@ -87,7 +85,7 @@ export default function Education() {
           year="June 2023"
           special="Computer Science"
           achievement="I have got the 922 marks out of 1100"
-          link="https://drive.google.com/file/d/1fiDnkfGjTaZAR27O7_DgtShqCcmRvTJz/view?usp=drivesdk"
+          link="https://drive.google.com/file/d/1zpEFIbkEoi74ojZ1U2YqH023arn6nqEt/view?usp=drivesdk"
           animation="flip-left"
         />
       </div>
@@ -103,8 +101,8 @@ export default function Education() {
         <Language name="NODE JS" icon={faJs} animation="fade-left" />
         <Language name="EXPRESS" icon={faJs} animation="fade-right" />
         <Language name="REACT JS" icon={faReact} animation="fade-left" />
-        <Language name="MY SQL" icon={faDatabase}  animation="fade-right" />
-        <Language name="MONGO DB" icon={faDatabase} animation="fade-left"  />
+        <Language name="MY SQL" icon={faDatabase} animation="fade-right" />
+        <Language name="MONGO DB" icon={faDatabase} animation="fade-left" />
         <Language name="C++" icon={faC} animation="fade-right" />
         <Language name="PYTHON" icon={faPython} animation="fade-left" />
       </div>
