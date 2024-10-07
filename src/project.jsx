@@ -39,6 +39,14 @@ function Oneproject(props) {
 export default function Project() {
   let projects = [
     {
+      name: "Text Utils",
+      description:
+        "I have developed a text utility app using React and Redux. It includes features like text conversion to uppercase,lowercase,replacetext etc. Users can toggle between dark and light themes. The app demonstrates efficient state management with Redux. Overall, it enhances the user experience with various functionalities.",
+      githubLink: "https://github.com/asadkhaksar1122/Password-Manager",
+      imageurl: "./navbaricon/texturils.png",
+      livelink: "https://asadkhaksar1122.github.io/Text-Utils/",
+    },
+    {
       name: "Password Manager",
       description:
         "Our Password Manager app, built with the MERN stack (MongoDB, Express.js, React, Node.js), securely stores and manages passwords. Users must enter a secret key to view or edit passwords, ensuring authorized access. The intuitive React interface makes password management easy and secure.",
@@ -59,7 +67,7 @@ export default function Project() {
       githubLink: "https://github.com/asadkhaksar1122/I-notebook",
       imageurl: "./navbaricon/inotebook.avif",
     },
-      {
+    {
       name: "Keeper App",
       description:
         'I have developed a note-taking application called "Keeper App" which is built using React. The application features SweetAlert for enhanced alert notifications.',
@@ -83,7 +91,7 @@ export default function Project() {
       imageurl: "./navbaricon/simon.jpg",
       livelink: "https://asadkhaksar1122.github.io/simon-game/",
     },
-  
+
     {
       name: "Note app",
       description:
@@ -91,14 +99,6 @@ export default function Project() {
       githubLink: "https://github.com/asadkhaksar1122/Notes-app",
       imageurl: "./navbaricon/notes.png",
       livelink: "https://asadkhaksar1122.github.io/Notes-app/",
-    },
-    {
-      name: "Emoji wikipedia",
-      description:
-        "I have developed a web application using React components that serves as an emoji encyclopedia",
-      githubLink: "https://github.com/asadkhaksar1122/emoji-wikipedia",
-      imageurl: "./navbaricon/emoji.jpeg",
-      livelink: "https://asadkhaksar1122.github.io/emoji-wikipedia/",
     },
     {
       name: "Other projects",
