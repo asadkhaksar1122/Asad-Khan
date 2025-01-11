@@ -18,30 +18,30 @@ import {
 import { useRef, useState } from "react";
 AOS.init({ offset: 120, duration: 500 });
 function Navbar(props) {
- let fordiv=useRef(null)
- let [toggle, settoggle] = useState("");
+  let fordiv = useRef(null);
+  let [toggle, settoggle] = useState("");
   function checkfunc(input) {
     let hamburger = document.getElementById("hamburger");
     if (input.checked) {
       hamburger.style.display = "none";
       settoggle("toggle");
-      fordiv.current.style.display="block"
+      fordiv.current.style.display = "block";
     } else {
       hamburger.style.display = "block";
       settoggle("");
-       fordiv.current.style.display = "none";
+      fordiv.current.style.display = "none";
     }
   }
-   document.addEventListener("scroll", function (e) {
-     let hamburger = document.querySelector(".hamburger");
-     let education = document.querySelector(".education");
+  document.addEventListener("scroll", function (e) {
+    let hamburger = document.querySelector(".hamburger");
+    let education = document.querySelector(".education");
 
-     if (window.scrollY >= education.offsetTop) {
-       hamburger.style.color = "black";
-     } else {
-       hamburger.style.color = "white";
-     }
-   });
+    if (window.scrollY >= education.offsetTop) {
+      hamburger.style.color = "black";
+    } else {
+      hamburger.style.color = "white";
+    }
+  });
 
   function changehandle(e) {
     let input = e.target;
@@ -81,29 +81,42 @@ function Navbar(props) {
           <div className="firstitem  item">
             <a href="#profile" onClick={switchoff}>
               {" "}
-              <FontAwesomeIcon icon={faUser} /> &nbsp; Profile
+              <FontAwesomeIcon
+                icon={faUser}
+                style={{ color: " #f7dc6f" }}
+              />{" "}
+              &nbsp; Profile
             </a>
           </div>
           <div className="firstitem item">
             <a href="#education" onClick={switchoff}>
-              <FontAwesomeIcon icon={faGraduationCap} /> &nbsp; Education
+              <FontAwesomeIcon
+                icon={faGraduationCap}
+                style={{ color: " #f7dc6f" }}
+              />{" "}
+              &nbsp; Education
             </a>
           </div>
           <div className="firstitem item">
             <a href="#contact" onClick={switchoff}>
-              <FontAwesomeIcon icon={faAddressBook} /> &nbsp; Contact
+              <FontAwesomeIcon
+                icon={faAddressBook}
+                style={{ color: " #f7dc6f" }}
+              />{" "}
+              &nbsp; Contact
             </a>
           </div>
           <div className="firstitem item">
             <a href="#projects" onClick={switchoff}>
-              <FontAwesomeIcon icon={faGithub} /> &nbsp; Github Project
+              <FontAwesomeIcon icon={faGithub} style={{ color: " #f7dc6f" }} />{" "}
+              &nbsp; Github Project
             </a>
           </div>
         </div>
         <div className="socialicon">
           <span>
             <a
-              href="https://wa.me/923114948262"
+              href="https://wa.me/923414299726"
               rel="noreferrer"
               target="_blank"
             >

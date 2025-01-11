@@ -29,7 +29,7 @@ function Main(props) {
           </p>
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1wJhUBH6iKJgOsD-KMNzZGbyflUD_P8wD/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1EA2HgYi7fVO7eTvBu_dRgnh87jKMaxRs/view?usp=drivesdk"
             rel="noreferrer"
           >
             My CV

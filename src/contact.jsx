@@ -46,17 +46,17 @@ export default function Contact() {
           </h1>
         </a>
         <Onecontact
-          name="Whatsapp"
-          contactno="+923114948262"
-          icon={"./navbaricon/whatsapp.png"}
-          link="https://wa.me/923114948262"
-        />
-        <Onecontact
-          name="Gmail"
-          contactno="Asadkhaksar1122@gmail.com"
-          icon={"./navbaricon/gmail.png"}
-          link="mailto:asadkhaksar1122@gmail.com"
-        />
+  name="Whatsapp"
+  contactno="+923414299726"
+  icon={"./navbaricon/whatsapp.png"}
+  link="https://wa.me/923414299726?text=Hello,%20I%20am%20interested%20in%20discussing%20a%20potential%20web%20development%20project%20with%20you.%20Could%20we%20schedule%20a%20time%20to%20talk%20further?%20Regards,%20Asad%20Khan."
+/>
+<Onecontact
+  name="Gmail"
+  contactno="Asadkhaksar1122@gmail.com"
+  icon={"./navbaricon/gmail.png"}
+  link="mailto:asadkhaksar1122@gmail.com?subject=Web%20Development%20Inquiry&body=Hello,%20I%20am%20interested%20in%20discussing%20a%20potential%20web%20development%20project%20with%20you.%20Could%20we%20schedule%20a%20time%20to%20talk%20further?%20Regards,%20Asad%20Khan."
+/>
         <Onecontact
           name="Linkedin"
           contactno="Asad Khan"
