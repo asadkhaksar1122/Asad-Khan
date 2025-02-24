@@ -116,7 +116,7 @@ function Navbar(props) {
         <div className="socialicon">
           <span>
             <a
-              href="https://wa.me/923414299726"
+              href="https://wa.me/923114948262"
               rel="noreferrer"
               target="_blank"
             >

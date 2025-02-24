@@ -39,6 +39,15 @@ function Oneproject(props) {
 export default function Project() {
   let projects = [
     {
+      name: "Todo List Angular",
+      description:
+        "I have developed a To-Do application using AngularJS that utilizes the browser's local storage to store tasks and to-dos.",
+      githubLink: "https://github.com/asadkhaksar1122/Todo-App-Angular",
+      imageurl: "./navbaricon/to-do-list.png",
+      livelink:
+        "https://todo-app-angular-4kg2ft6rt-asadkhaksar1122s-projects.vercel.app/",
+    },
+    {
       name: "Text Utils",
       description:
         "I have developed a text utility app using React and Redux. It includes features like text conversion to uppercase,lowercase,replacetext etc. Users can toggle between dark and light themes. The app demonstrates efficient state management with Redux. Overall, it enhances the user experience with various functionalities.",
@@ -83,14 +92,6 @@ export default function Project() {
       imageurl: "./navbaricon/quiz.png",
       livelink: "https://asadkhaksar1122.github.io/Coding-quiz/",
     },
-    {
-      name: "Simon Game",
-      description:
-        "Experience the classic Simon Game brought to life with HTML, CSS, and JavaScript. Test your memory and reflexes as you follow and repeat the pattern of lights and sounds. Have fun challenging yourself with this exciting electronic game!",
-      githubLink: "https://github.com/asadkhaksar1122/simon-game",
-      imageurl: "./navbaricon/simon.jpg",
-      livelink: "https://asadkhaksar1122.github.io/simon-game/",
-    },
 
     {
       name: "Note app",
@@ -122,6 +123,7 @@ export default function Project() {
             link={project.githubLink}
             image={project.imageurl}
             livelink={project.livelink}
+key={project.name}
           />
         ))}
       </div>

@@ -13,6 +13,7 @@ import {
   faJs,
   faPython,
   faReact,
+  faAngular,
 } from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -96,11 +97,14 @@ export default function Education() {
           &nbsp;Programing language
         </h2>
         <Language name="HTML" icon={faHtml5} animation="fade-right" />
+
         <Language name="CSS" icon={faCss3} animation="fade-left" />
         <Language name="JAVASCRIPT" icon={faJs} animation="fade-right" />
+        <Language name="TYPESCRIPT" icon={faJs} animation="fade-left" />
         <Language name="NODE JS" icon={faJs} animation="fade-left" />
         <Language name="EXPRESS" icon={faJs} animation="fade-right" />
         <Language name="REACT JS" icon={faReact} animation="fade-left" />
+        <Language name="ANGULAR" icon={faAngular} animation="fade-right" />
         <Language name="MY SQL" icon={faDatabase} animation="fade-right" />
         <Language name="MONGO DB" icon={faDatabase} animation="fade-left" />
         <Language name="C++" icon={faC} animation="fade-right" />
